@@ -1,0 +1,59 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Virtual Environment
+venv/
+.venv/
+env/
+
+# Environment Variables
+.env
+
+# Data (keep raw data out of git — too large)
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+
+# Model cache
+models/
+.cache/
+
+# FAISS indices
+*.faiss
+*.index
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Logs
+*.log
+logs/
+
+# Output (generated results)
+data/output/*
+!data/output/.gitkeep
+
+# Challenge datasets (ignore large files)
+required_datasets/**/candidates.jsonl
+required_datasets/**/*.jsonl
+required_datasets/**/*.docx
+required_datasets/**/~$*.docx

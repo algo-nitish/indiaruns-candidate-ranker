@@ -1,0 +1,69 @@
+# Redrob Hackathon — Submission Metadata
+# ============================================================================
+# Team identity
+# ============================================================================
+team_name: "IndiaRuns AI Rankers"
+
+primary_contact:
+  name: "Nitin"
+  email: "cnitin@example.com"
+  phone: "+91-9999999999"
+
+team_members:
+  - name: "Nitin"
+    email: "cnitin@example.com"
+    role: "ML Engineer"
+  - name: "Antigravity AI"
+    email: "antigravity@google.com"
+    role: "AI Partner"
+
+# ============================================================================
+# Code and reproducibility
+# ============================================================================
+github_repo: "https://github.com/nitin/indiaruns-candidate-ranker"
+sandbox_link: "https://indiaruns-candidate-ranker.streamlit.app/"
+reproduce_command: "python rank.py --candidates ./required_datasets/India_runs_data_and_ai_challenge/candidates.jsonl --out ./data/output/submission.csv"
+
+# ============================================================================
+# Compute environment
+# ============================================================================
+compute:
+  platform: "Local CPU PC"
+  cpu_cores: 8
+  ram_gb: 16
+  python_version: "3.12.6"
+  os: "Windows 11"
+  uses_gpu_for_inference: false
+  has_network_during_ranking: false
+  pre_computation_required: false
+  pre_computation_time_minutes: 0
+
+# ============================================================================
+# AI tools declaration
+# ============================================================================
+ai_tools_used:
+  - "Claude"
+  - "Gemini"
+ai_usage_summary: |
+    Used Gemini and Claude for architecture design, refactoring, and optimizing candidate ranking logic.
+    No candidate data was uploaded to external LLM APIs during the ranking process.
+
+# ============================================================================
+# Approach summary
+# ============================================================================
+methodology_summary: |
+    Multi-stage L1/L2 Candidate Ranking System. L1 screening performs O(1) set-intersection skill matching,
+    fast string-matching for title fit, and direct behavioral signal scaling over all 100,000 candidates (completing in under 3 seconds).
+    It also applies deterministic honeypot detection to filter out impossible profiles (duration-date mismatches, extreme expert-skill anomalies).
+    L2 ranker encodes only the top 5,000 candidate profiles using sentence-transformers (all-MiniLM-L6-v2) for deep semantic matching,
+    combined with a high-fidelity CandidateScorer.
+
+# ============================================================================
+# Declarations
+# ============================================================================
+declarations:
+  read_submission_spec: true
+  code_is_original_work: true
+  no_collusion: true
+  honeypot_check_done: true
+  reproduction_tested: true
