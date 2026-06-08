@@ -99,8 +99,8 @@ This document contains the exact slide-by-slide copy-pasteable content for your 
 ---
 
 ## Slide 10: Submission Assets
-- **GitHub Repository**: [https://github.com/nitin/indiaruns-candidate-ranker](https://github.com/nitin/indiaruns-candidate-ranker)
-- **Hosted Sandbox Demo**: [https://indiaruns-candidate-ranker.streamlit.app/](https://indiaruns-candidate-ranker.streamlit.app/)
+- **GitHub Repository**: [https://github.com/algo-nitish/indiaruns-candidate-ranker](https://github.com/algo-nitish/indiaruns-candidate-ranker)
+- **Hosted Sandbox Demo**: [https://algo-nitish-indiaruns-candidate-ranker-appstreamlit-app-cckley.streamlit.app/](https://algo-nitish-indiaruns-candidate-ranker-appstreamlit-app-cckley.streamlit.app/)
 - **Output Submission**: `data/output/submission.csv`
 
 ---

@@ -20,8 +20,8 @@ team_members:
 # ============================================================================
 # Code and reproducibility
 # ============================================================================
-github_repo: "https://github.com/nitin/indiaruns-candidate-ranker"
-sandbox_link: "https://indiaruns-candidate-ranker.streamlit.app/"
+github_repo: "https://github.com/algo-nitish/indiaruns-candidate-ranker"
+sandbox_link: "https://algo-nitish-indiaruns-candidate-ranker-appstreamlit-app-cckley.streamlit.app/"
 reproduce_command: "python rank.py --candidates ./required_datasets/India_runs_data_and_ai_challenge/candidates.jsonl --out ./data/output/submission.csv"
 
 # ============================================================================
